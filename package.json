@@ -1,8 +1,8 @@
 {
-    "name": "react-native-openalpr",
-    "title": "React Native Openalpr",
+    "name": "tgozo-number-plate-scanner",
+    "title": "React Native Number Plate Scanner",
     "version": "2.2.0",
-    "description": "Open ALRP component for React Native",
+    "description": "Number Plate Scanner for React Native",
     "main": "index.js",
     "scripts": {
         "publish": "npx np --no-tests --no-yarn",
@@ -10,15 +10,15 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/RobertSasak/react-native-openalpr.git",
-        "baseUrl": "https://github.com/RobertSasak/react-native-openalpr"
+        "url": "git+https://github.com/tgozo19/react-native-openalpr",
+        "baseUrl": "https://github.com/tgozo19/react-native-openalpr"
     },
     "keywords": [
         "react-native"
     ],
-    "homepage": "https://github.com/RobertSasak/react-native-openalpr",
+    "homepage": "https://github.com/tgozo19/react-native-openalpr",
     "author": {
-        "name": "Evan Rosenfeld, CarDash <www.cardash.com>"
+        "name": "Takudzwa Gozo"
     },
     "license": "MIT",
     "licenseFilename": "LICENSE",
