@@ -1,7 +1,7 @@
 {
     "name": "tgozo-number-plate-scanner",
     "title": "React Native Number Plate Scanner",
-    "version": "2.2.0",
+    "version": "2.2.1",
     "description": "Number Plate Scanner for React Native",
     "main": "index.js",
     "scripts": {
