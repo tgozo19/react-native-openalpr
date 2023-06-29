@@ -1,9 +1,6 @@
-[![Build Status](https://travis-ci.com/RobertSasak/react-native-openalpr.svg?branch=master)](https://travis-ci.com/RobertSasak/react-native-openalpr)
-[![Gitter](https://badges.gitter.im/react-native-openalpr/community.svg)](https://gitter.im/react-native-openalpr/community)
+# tgozo-number-plate-scanner
 
-# react-native-openalpr
-
-[OpenALPR](https://github.com/openalpr/openalpr) integration for React Native. Provides a camera component that recognizes license plates in real-time. Supports both iOS and Android.
+[tgozo-number-plate-scanner](https://github.com/tgozo19/react-native-openalpr) integration for React Native. Provides a camera component that recognizes license plates in real-time. Supports both iOS and Android.
 
 <img alt="OpenALPR iOS Demo Video" src="https://cdn-images-1.medium.com/max/800/1*u1nTJMFc34aDLTPCIr0-cQ.gif" width=200 height=350 /> <img alt="OpenALPR Android Demo Video" src="https://user-images.githubusercontent.com/10334791/27850595-62dc852e-615e-11e7-875c-57a017dbb28c.gif" width=200 height=350 />
 
@@ -20,7 +17,7 @@
 Start by adding the package and linking it.
 
 ```sh
-$ yarn add react-native-openalpr
+$ yarn add tgozo-number-plate-scanner
 ```
 
 ### iOS Specific Setup
@@ -93,14 +90,14 @@ include ':app'
 
 // Add these lines
 include ':openalpr'
-project(':openalpr').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-openalpr/android/libraries/openalpr')
+project(':openalpr').projectDir = new File(rootProject.projectDir, '../node_modules/tgozo-number-plate-scanner/android/libraries/openalpr')
 include ':opencv'
-project(':opencv').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-openalpr/android/libraries/opencv')
+project(':opencv').projectDir = new File(rootProject.projectDir, '../node_modules/tgozo-number-plate-scanner/android/libraries/opencv')
 ```
 
 #### Linking
 
-The library is linked automatically with leptonica, opencv, tesseract, and openalpr ([openalpr](https://github.com/SandroMachado/openalpr-android)).
+The library is linked automatically with leptonica, opencv, tesseract, and openalpr.
 To make it work, copy and paste the directory with the runtime needed data to your project at path `android/app/src/main/assets/runtime_data`.
 
 The `runtime_data` file can be found in `/example/android/app/src/main/assets/` in this repo. Open `runtime_data/openalpr.conf` file and replace `com.rnopenalprexample` with your package name
@@ -119,7 +116,7 @@ state_id_img_size_percent = 2.0
 
 ## Usage
 
-OpenALPR exposes a camera component (based on [react-native-camera](https://github.com/lwansbrough/react-native-camera)) that is optimized to run OpenALPR image processing on a live camera stream. Among other parameters, the camera accepts a callback, `onPlateRecognized`, for when a plate is recognized.
+This package exposes a camera component (based on [react-native-camera](https://github.com/lwansbrough/react-native-camera)) that is optimized to run image processing on a live camera stream. Among other parameters, the camera accepts a callback, `onPlateRecognized`, for when a plate is recognized.
 
 ```js
 import React, { Component } from 'react'
@@ -185,7 +182,7 @@ export default class PlateRecognizer extends React.Component {
 
 #### `zoom`
 
-The zoon of the camera (Android only). Can be :
+The zoom of the camera (Android only). Can be :
 
 0 to 99
 
@@ -248,7 +245,7 @@ If true, this focuses the camera where the user taps
 
 ## Examples
 
-- [Example Project](https://github.com/RobertSasak/react-native-openalpr/tree/master/example)
+- [Example Project](https://github.com/tgozo19/react-native-openalpr/tree/master/example)
 
 ## Development
 
@@ -259,14 +256,14 @@ If true, this focuses the camera where the user taps
 1. Clone the repo and enter the `example` directory
 
 ```ssh
-git clone https://github.com/RobertSasak/react-native-openalpr.git
+git clone https://github.com/tgozo19/react-native-openalpr.git
 cd react-native-openalpr
 cd example
 ```
 
 2. From the `example` directory, run `yarn`
 
-3. Copy the `android` folder from `/react-native-openalpr/android` to `/react-native-openalpr/example/node_modules/react-native-openalpr/`
+3. Copy the `android` folder from `/react-native-openalpr/android` to `/react-native-openalpr/example/node_modules/tgozo-number-plate-scanner/`
 
 4. Open Android Studio and import the project `react-native-openalpr/example/android` and wait until Android Studio indexes and links.
 
@@ -282,6 +279,7 @@ Note: If you are getting errors, double check that you have completed all of the
 
 ## Credits
 
+- RobertSasak [RobertSasak](https://github.com/RobertSasak) (the original author)
 - OpenALPR built from [OpenALPR-iOS](https://github.com/twelve17/openalpr-ios)
 - Project scaffold based on [react-native-camera](https://github.com/lwansbrough/react-native-camera)
 
