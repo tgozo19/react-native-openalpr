@@ -282,7 +282,3 @@ Note: If you are getting errors, double check that you have completed all of the
 - RobertSasak [RobertSasak](https://github.com/RobertSasak) (the original author)
 - OpenALPR built from [OpenALPR-iOS](https://github.com/twelve17/openalpr-ios)
 - Project scaffold based on [react-native-camera](https://github.com/lwansbrough/react-native-camera)
-
-## Sponsors
-
-- [repocoin.io](https://repocoin.io)
